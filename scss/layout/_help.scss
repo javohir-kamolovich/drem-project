@@ -1,0 +1,52 @@
+.help {
+  margin-bottom: 101px;
+
+  &__title {
+    margin: 17px 0 35px 0;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card {
+    width: 391px;
+    padding: 48px;
+    border: 1px solid #f3d1bf;
+    border-radius: 6px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 41px 0 19px 0;
+    }
+
+    &___desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      padding-bottom: 26px;
+    }
+
+    &__sub {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &__svg {
+    padding: 24px;
+    background-color: $COLOR-AND-BG;
+    border-radius: 50%;
+  }
+}
+@include mobile() {
+  .help {
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}

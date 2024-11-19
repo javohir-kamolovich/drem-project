@@ -1,0 +1,79 @@
+.hero {
+  background-color: $BG-COLOR;
+  color: white;
+  padding: 118px 0 56px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__sup {
+    color: $COLOR-AND-BG;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 80px;
+    margin: 24px 0;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    padding: 18px 23px 16px 23px;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 52px;
+    margin-left: 20px;
+  }
+
+  &__end {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 110px;
+  }
+
+  &__sub-desc {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__sub {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@include mobile() {
+  .hero {
+    &__wrapper {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  .img {
+    width: 100%;
+  }
+}

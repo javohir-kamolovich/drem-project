@@ -1,0 +1,58 @@
+.project {
+  margin-top: 140px;
+  margin-bottom: 108px;
+
+  &__wrapper {
+    display: flex;
+    gap: 130px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    margin: 17px 0 31px 0;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $DESC-COLOR;
+    margin-bottom: 28px;
+  }
+
+  &__sub {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__list {
+    margin-top: 50px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__span {
+    margin-right: 66px;
+    font-size: 72px;
+    font-weight: 800;
+  }
+}
+
+@include mobile() {
+  .project {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-top: -77px;
+    }
+  }
+}

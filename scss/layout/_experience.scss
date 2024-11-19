@@ -1,0 +1,51 @@
+.experience {
+  padding: 101px 0 161px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $MAIN-COLOR;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    margin: 20px 0 26px 0;
+  }
+
+  &__text {
+    color: $MAIN-COLOR;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    color: $MAIN-COLOR;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 18px 0 34px 0;
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 17px 33px;
+    color: $MAIN-COLOR;
+    background-color: white;
+    box-shadow: 0px 3px 9px 0px #39140014;
+    font-size: 14px;
+    font-weight: 900;
+  }
+}
+
+@include mobile() {
+  .experience {
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}

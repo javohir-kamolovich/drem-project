@@ -1,0 +1,22 @@
+@import "./scss/variable/colors";
+
+@import "./scss/base/typography";
+@import "./scss/base/reset";
+@import "./scss/base/base";
+
+@import "./scss/mixins/mixin";
+
+@import "./scss/layout/containers";
+@import "./scss/layout/header";
+@import "./scss/layout/_hero.scss";
+@import "./scss/layout/companies";
+@import "./scss/layout/experience";
+@import "./scss/layout/statistics";
+@import "./scss/layout/project";
+@import "./scss/layout/video";
+@import "./scss/layout/new-look";
+@import "./scss/layout/features";
+@import "./scss/layout/product";
+@import "./scss/layout/help";
+
+@import "./scss/components/buttom";

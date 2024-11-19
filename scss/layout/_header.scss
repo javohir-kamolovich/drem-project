@@ -1,0 +1,43 @@
+.nav {
+  background-color: $BG-COLOR;
+  color: white;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__btn {
+    padding: 16px 35px 18px 35px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
+
+@include mobile() {
+  .nav {
+    &__list {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+    }
+  }
+}

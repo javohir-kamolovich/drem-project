@@ -1,0 +1,40 @@
+.new-look {
+  margin: 191px 0 200px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    margin: 20px 0 26px 0;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 26px;
+  }
+
+  &__item {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+  }
+}
+
+@include mobile() {
+  .new-look {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+  }
+}
